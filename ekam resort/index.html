@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add description -->
+    <meta name="description" content="this is description">
+    <meta name="keywords"
+        content="marriagepalace, marrige palace, Resort, birthday party, gathering, reception, catering, caterers, punjab, bela, behrampur, ropar">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="stylesheet" href="er.css">
+    <script src="er.js"></script>
+    <title>Ekam Resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <style>
+        .box {
+            font-size: 30px;
+            /* border: 2px solid #fd4848; */
+            background-color: lavender;
+            border-radius: 3px;
+            padding: 10px 10px;
+            margin: 20px 10px;
+            text-align: justify;
+
+        }
+
+        .contact {
+            font-size: 26px;
+            /* border: 2px solid chocolate; */
+            background-color: #f4b0ab;
+            border-radius: 3px;
+            padding: 10px 10px;
+            margin: 20px 10px;
+            text-align: justify;
+        }
+
+        .nav {
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+        .nav ul{
+            overflow: auto;
+        }
+        .nav li{
+            float: left;
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: black;  
+            padding:10px 10px;
+            margin: 10px 10px;
+
+        }
+
+        #heading1 {
+            background-color: #f55a4fb8;
+            animation: mymove 5s infinite;
+            font-family: 'Style Script', cursive;
+            text-align: center;
+            font-size: 75px;
+        }
+
+        .home {
+            font-size: 40px;
+            border: 2px double;
+            padding: 12px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+        @keyframes mymove {
+            50% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading1">Ekam Resort</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div>
+            <p class="box"> <strong>Make your Reservation online!<a href="reservation.html"><input type="button"
+                            value="Booking"></strong></a> <br> AC Banquet Hall with Green Lawn for Marriages & Parties.
+            </p>
+        </div>
+        <div class="box">
+            <h3 id="heading3">Your next destination:</h3>
+            <p>Ideal for marriages & parties enjoy the outdoors of our resort in beautifull green lawn,without having
+                worries as thanks to the wide variety of services that resort has. </p>
+        </div>
+        <div class="box">
+            <h3>Social and Corporate Events:</h3>
+            <p>Our team specialized in Events Organization will make your ideas come true. Business events, Congresses,
+                Executive Meetings, Weddings, Birthday Parties, Graduation parties, Farewell parties, are some of the
+                great events that are organized year after year in our space.</p>
+        </div>
+        <div class="box">
+            <h3 id="heading4">Nature View:</h3>
+            <p>We invite you to enjoy an experience of relaxation and beauty, which combines the best services.You will
+                experience the garden-fresh Flora.</P>
+        </div>
+        <div class="box">
+            <h3 id="heading5">Round the Clock Service:</h3>
+            <p>From morning to night, we will be waiting for you in our warm Resort so you can enjoy delicious menus
+                with those you love the most. Breakfasts, lunches, snacks, dinners and snacks in an environment that
+                balances nature and urbanism.</p>
+        </div>
+        <div class="box">
+            <h3 id="heading6">Get to know our Resort:</h3>
+            <p>Located at the road from bela to behrampur district Chamkaur sahib. Elegance, comfort, secuity, quality &
+                personalized service are some of the characteristics that make our Resort a benchmark for the
+                destination.</p>
+        </div>
+    </article>
+    <form action="backend.php" class="contact">
+        <h3>Contact us</h3>
+        <div>
+            Name: <input type="text" name="Name">
+        </div>
+        <div>
+            Email: <input type="email" name="email">
+        </div>
+        <div>
+            Telephone: <input type="tel" name="phone number">
+        </div>
+        <div>
+            ON which date you are interested: <input type="date" name="FunctionDate">
+        </div>
+        <div>
+            Your message: <textarea name="your message" cols="30" rows="10"></textarea>
+        </div>
+        <input type="button" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKam Resort Reservation</title>
+    <style>
+        .bgcolor{
+            background-color: #797979;
+        }
+        .form{
+            font-size: 26px;
+            /* border: 2px solid chocolate; */
+            background-color: lavender;
+            border-radius: 3px;
+            padding: 21px 24px;
+            margin: 28px 8px;
+        }
+    </style>
+</head>
+<body class="bgcolor"> 
+    <header>
+        <h1>Ekam Resort</h1>
+    </header>
+    <hr>
+    <nav>
+        <h2> <a href="index.html">Home</a>  <a href="reservation.html">Reservation</a>  <a href="blog.html">Blog</a>  <a href="contact.html">Contact</a> </h2>
+    </nav>
+    <hr>
+    <form action="backend.php" class="form">
+        <div>
+            Date you are intrested in:
+            <input type="date" name="date" id="FunctionDate">
+        </div>  
+        <div>
+            Looking up for: <br>
+            <input type="radio" name="Marriage" id="Marriage">Marriage
+            <input type="radio" name="Marriage" id="Marriage">Reception
+            <input type="radio" name="Marriage" id="Marriage">Birthday Party
+            <input type="radio" name="Marriage" id="Marriage">All the Other Parties
+        </div>
+        <div>
+            What are your necessity?<br>
+            <input type="radio" name="Hall" id="Hall">Hall
+            <input type="radio" name="Lawn" id="Lawn">lawn
+            <input type="radio" name="Hall+Lawn" id="Hall+Lawn">Hall+Lawn
+        </div>
+        <div>
+            Ornamentation:<br>
+            <input type="radio" name="Standard" id="StandardDecoration">Standard Decoration
+            <input type="radio" name="Classic" id="ClassicDecoration">Classic Decoration
+        </div>
+        <div>
+            Crockery:<br>
+            <input type="radio" name="Melamine Crockery" id="Melamine">Melamine Crockery
+            <input type="radio" name="Bone China" id="Bone China">Bone China Crockery
+            <input type="radio" name="Golden Crockery" id="Golden">Golden Crockery
+        </div>
+        <div>
+            Catering:<br>
+            <input type="radio" name="pts" id="pts">Punjab Tent Service
+            <input type="radio" name="" id="">Modern Tent service
+            <input type="radio" name="etc" id="etc">Etc(bring your own)
+            <br>
+            Gathering:- <input type="number" name="gathering" id="gathering">
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
